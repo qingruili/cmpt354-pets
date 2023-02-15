@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Book APPOINTMENT</title>
+    <link rel="stylesheet" href="../../pets/css/app.css">
+</head>
+
+<body>
+    <div class="owneraddpetsM">
+
+        <h2 style="text-align: center;">BOOK APPOINTMENT</h2>
+        <br>
+        <br>
+        <form action="../../pets/php/bookapp.php" method="post">
+            <label for="">TIMEDATE (from 08:00 to 16:30 Half hour per appointment):</label>
+            <input type="text" name="TD" id="" placeholder="yyyy-mm-dd xx:xx">
+            <br>
+            <br>
+            <label for="">ADDRESS OF HOSTIPAL:</label>
+            <input type="text" name="AH" id="" placeholder="">
+            <br>
+            <br>  <label for="">AppmType:</label>
+            <input type="text" name="AT" id="" placeholder="Specialist Clinic or General Outpatient Clinic">
+            <br>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            
+        </form>  
+        <br>
+        <br>
+        <form action="" method="post">
+            <a href="./appointment.html">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>

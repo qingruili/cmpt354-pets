@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>EDIT PET</title>
+    <link rel="stylesheet" href="../../pets/css/owneraddpets.css">
+</head>
+
+<body>
+    <div class="owneraddpetsM">
+        <div class="logo">
+            <img src="../../pets/img/dog and cat.webp" alt="" srcset="">
+        </div>
+        <h2 style="text-align: center;">EDIT PET</h2>
+        <br>
+        <br>
+        <form action="../../pets/php/changepet.php" method="post">
+
+            <label for="">PID:</label>
+            <input type="text" name="Pid" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Enter information if you want to change it, otherwise keep empty:</label>
+            <br>
+            NAME:
+            <br>
+            <select name="NAMEC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="NAME" id="" placeholder="">
+            <br>
+            COLOR:
+            <br>
+            <select name="COLORC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="COLOR" id="" placeholder="">
+            <br>
+            BIRTH:
+            <br>
+            <select name="BIRTHC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="BIRTH" id="" placeholder="">
+            <br>
+            TYPE:
+            <br>
+            <select name="TYPEC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="TYPE" id="" placeholder="">
+            <br>
+            WEIGHT:
+            <br>
+            <select name="WEIGHTC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="WEIGHT" id="" placeholder="">
+            <br>
+            SEX:
+            <br>
+            <select name="SEXC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="SEX" id="" placeholder="">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            
+        </form>  
+        <br>
+        <br>
+        <form action="" method="post">
+            <a href="./pets.html">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>

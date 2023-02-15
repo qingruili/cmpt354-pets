@@ -1,0 +1,40 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+$host = "localhost";
+$user = "root";
+$Password = "root";
+$db = "pethealthsystem";
+
+
+$conn = mysqli_connect($host, $user, $Password, $db);
+if (!$conn) {
+    die(mysqli_connect_error());
+}
+$mysqli->set_charset('utf8'); 
+
+getUser($mysqli);
+$mysqli->close();
+
+if($_SERVER['REQUEST_METHOD'] == "POST") {
+	$PhoneNumber = $_POST['PhoneNumber'];
+	$Password = $_POST['Password'];
+	
+	$select = "SELECT * FROM owner WHERE PhoneNumber = '$PhoneNumber' && Password = '$Password' ";
+
+    $result = mysqli_query($conn, $select);
+
+    if(mysqli_num_rows($result) > 0) {
+
+      $error[] = 'user already exist!';
+
+    }else{
+	   
+	   $insert = "INSERT INTO owner(PhoneNumber, Password) VALUES('$PhoneNumber','$Password')";
+       mysqli_query($conn, $insert);
+	   if(mysqli_query($conn, $sql_query)) {
+		   echo "Sign Up Successfully!";
+	   }
+	   
+      }
+}
+?>

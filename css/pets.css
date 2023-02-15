@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-image: url('../../pets/img/dog and cat.webp');
+}
+
+.logo{
+    width: fit-content;
+    text-align: center;
+}
+
+.logo img{
+    width: 26%;
+    margin-top: -17%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+label{
+    display: block;
+    width: 150px;
+    text-align: justify;
+}
+
+.owneraddpetsM{
+    position: absolute;
+    top: 30vh;
+    width: 350px;
+    height: auto;
+    margin-left: 40vw;
+    padding: 10px 24px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255,0.72);
+    box-shadow: 2px 2px 14px 2px rgb(201, 201, 201);
+    z-index: 999;
+}

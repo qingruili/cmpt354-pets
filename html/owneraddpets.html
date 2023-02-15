@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Add Pet</title>
+    <link rel="stylesheet" href="../../pets/css/owneraddpets.css">
+</head>
+
+<body>
+    <div class="owneraddpetsM">
+        <div class="logo">
+            <img src="../../pets/img/dog and cat.webp" alt="" srcset="">
+        </div>
+        <form action="../../pets/php/owneraddpets.php" method="post">
+            <h2 style="text-align: center;">Your Pet</h2>
+            <label for="">PID:</label>
+            <input type="text" name="PID" id="" placeholder="Number or letter, length:16 ">
+            <br>
+            <br>
+            <label for="">Name:</label>
+            <input type="text" name="Name" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Color:</label>
+            <input type="text" name="Color" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Birth:</label>
+            <input type="text" name="Birth" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Type:</label>
+            <input type="text" name="Type" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Age:</label>
+            <input type="text" name="Age" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Weight:</label>
+            <input type="text" name="Weight" id="" placeholder="">
+            <br>
+            <br>
+            <label for="">Sex:</label>
+            <select name="Sex" id="">
+                <option value="0"> Male </option>
+                <option value="1"> Female </option>
+            </select>
+            <br>
+            <br>
+            <label for="">Species:</label>
+            <select name="species" id="">
+                <option value="0">Mammalia</option>
+                <option value="1"> Birds </option>
+                <option value="2"> Reptiles </option>
+            </select>
+            <label for="">Whether Sterilization:</label>
+            <input type="text" name="Sterilization" id="" placeholder="Write when choose Mammalia">
+            <br>
+            <br>
+            <label for="">NumberOfReplaceFeathers:</label>
+            <input type="number" name="NumberOfReplaceFeathers" id="" placeholder="Write when choose Birds">
+            <br>
+            <br>
+            <label for="">NumberOfMolts:</label>
+            <input type="number" name="NumberOfMolts" id="" placeholder="Write when choose Reptiles">
+            <br>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            
+        </form>  
+        <br>
+        <br>
+        <form action="" method="post">
+            <a href="./pets.html">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>

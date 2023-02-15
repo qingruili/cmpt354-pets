@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>CHANGE YOUR INFORMATION</title>
+    <link rel="stylesheet" href="../../pets/css/youraccount.css">
+</head>
+
+<body>
+    <div class="owneraddpetsM">
+        <div class="logo">
+            <img src="../../pets/img/account.png" alt="" srcset="">
+        </div>
+        <h2 style="text-align: center;">CHANGE YOUR INFORMATION</h2>
+        
+        <form action="../php/changeinfo.php" method="post">
+
+          
+            <label for="">Enter information if you want to change it, otherwise keep empty:</label>
+            <br>
+            PhoneNumber:
+            <br>
+            <select name="PHC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="PH" id="" placeholder="xxx-xxx-xxxx">
+            <br>
+            Address:
+            <br>
+            <select name="ADC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="AD" id="" placeholder="">
+            <br>
+            Name:
+            <br>
+            <select name="NAMEC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="NAME" id="" placeholder="">
+            <br>
+            Email:
+            <br>
+            <select name="EMAILC" id="">
+                <option value="0">No CHANGE</option>
+                <option value="1">CHANGE</option>
+            <input type="text" name="EMAIL" id="" placeholder="">
+            <br>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <br>
+        <form action="" method="post">
+            <a href="./account.html">Cancel</a>
+        </form>
+       
+    </div>
+</body>
+
+</html>
